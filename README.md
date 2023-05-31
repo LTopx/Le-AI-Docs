@@ -1,6 +1,6 @@
-# Nextra Docs Template 
+# L-GPT Docs
 
-This is a template for creating documentation with [Nextra](https://nextra.site).
+This is a template for creating documentation with [L-GPT](https://gpt.ltopx.com).
 
 [**Live Demo →**](https://nextra-docs-template.vercel.app)
 

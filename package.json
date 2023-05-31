@@ -1,31 +1,32 @@
 {
-  "name": "nextra-docs-template",
+  "name": "l-docs",
   "version": "0.0.1",
-  "description": "Nextra docs template",
+  "description": "Documentation project for L-GPT project introduction and detailed explanation",
   "scripts": {
     "dev": "next dev",
+    "devt": "next dev --turbo",
     "build": "next build",
     "start": "next start"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shuding/nextra-docs-template.git"
+    "url": "https://github.com/Peek-A-Booo/L-DOCS.git"
   },
-  "author": "Shu Ding <g@shud.in>",
+  "author": "Ehtan Liu",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shuding/nextra-docs-template/issues"
+    "url": "https://github.com/Peek-A-Booo/L-DOCS/issues"
   },
-  "homepage": "https://github.com/shuding/nextra-docs-template#readme",
+  "homepage": "https://github.com/Peek-A-Booo/L-DOCS",
   "dependencies": {
-    "next": "^13.0.6",
-    "nextra": "latest",
-    "nextra-theme-docs": "latest",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "next": "13.4.4",
+    "nextra": "2.6.2",
+    "nextra-theme-docs": "2.6.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "@types/node": "18.11.10",
-    "typescript": "^4.9.3"
+    "@types/node": "20.2.5",
+    "typescript": "5.0.4"
   }
 }
