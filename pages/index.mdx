@@ -1,11 +1,88 @@
 # Introduction
 
-Welcome to L-GPT!
-
 ## What is L-GPT?
 
-L-GPT is an open-source project that helps you improve your learning, work, and life efficiency by providing various AI models.
+L-GPT is an open-source project that integrates various large language models' open APIs to provide users with highly aggregated and helpful AI services. It not only supports basic conversation functions but will also support more features such as text-to-speech, speech input, file parsing, plugins, etc. in the future. It can improve learning, work, and life efficiency in many ways.
+
+## Why start this project?
+
+As we all know, we are currently in the era of AI, with 2023 being the first year of AI. The original intention of starting this project is to learn and understand AI-related knowledge and content more deeply, to keep up with the times, and to maintain sensitivity to technical direction and current events. At the same time, as a programmer, I also want to further broaden my horizons and technical stack, and maintain stronger competitiveness in this era of information and technology.
+
+## Supported Clients
+
+Currently, only web platform is supported. The plan is to expand to all platforms, with the development of PC platform client expected to start in June.
+
+- [x] Web
+- [ ] iOS
+- [ ] macOS
+- [ ] Windows
+- [ ] Android
 
 ## Documentation
 
-xxx
+Here, you can learn everything about L-GPT.
+
+import { Card, Cards } from "nextra-theme-docs";
+
+<Cards className="flex flex-col">
+  <Card
+    icon={
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="h-6 w-6"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z"
+        />
+      </svg>
+    }
+    title="Basic →"
+    href="/basic"
+  />
+  <Card
+    icon={
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="h-6 w-6"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z"
+        />
+      </svg>
+    }
+    title="Features →"
+    href="/features"
+  />
+  <Card
+    icon={
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="h-6 w-6"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z"
+        />
+      </svg>
+    }
+    title="Change Logs →"
+    href="/docs/blog-theme/page-configuration"
+  />
+</Cards>

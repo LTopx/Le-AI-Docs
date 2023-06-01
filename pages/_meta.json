@@ -1,15 +1,30 @@
 {
   "index": "Introduction",
+  "basic": "Basic",
+  "features": "Features",
   "another": "Another Page",
   "advanced": "Advanced (A Folder)",
-  "about": {
-    "title": "About",
-    "type": "page"
+  "about": "About",
+  "try": {
+    "type": "page",
+    "title": "Try L-GPT ↗",
+    "href": "https://gpt.ltopx.com",
+    "newWindow": true
   },
   "contact": {
-    "title": "Contact ↗",
-    "type": "page",
-    "href": "https://twitter.com/shuding_",
-    "newWindow": true
+    "type": "menu",
+    "title": "Contact",
+    "items": {
+      "about": {
+        "title": "Twitter ↗",
+        "href": "https://twitter.com/peekbomb",
+        "newWindow": true
+      },
+      "contact": {
+        "title": "Telegram ↗",
+        "href": "https://t.me/+7fLJJoGV_bJhYTk1",
+        "newWindow": true
+      }
+    }
   }
 }
