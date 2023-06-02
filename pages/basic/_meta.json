@@ -4,5 +4,8 @@
   "conversation-setting": "Conversation Setting",
   "dark-mode": "Dark Mode",
   "responsive": "Responsive",
-  "i18n": "i18n"
+  "i18n": "i18n",
+  "data-reset": "Data Reset",
+  "export-import": "Export / Import",
+  "send-message": "Send Message"
 }
