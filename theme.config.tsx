@@ -1,5 +1,6 @@
 import { DocsThemeConfig } from "nextra-theme-docs";
 import { useRouter } from "next/router";
+import { useConfig } from "nextra-theme-docs";
 
 const logo = (
   <span>
@@ -87,6 +88,23 @@ const config: DocsThemeConfig = {
         titleTemplate: "%s – L-GPT Docs",
       };
     }
+  },
+  head: function useHead() {
+    const { title } = useConfig();
+
+    return (
+      <>
+        <meta
+          name="viewport"
+          content="height=device-height ,width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no"
+        />
+        <meta
+          name="og:title"
+          content={title ? title + " – L-GPT Docs" : "L-GPT Docs"}
+        />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+      </>
+    );
   },
   banner: {
     key: "0.5.1-release",
