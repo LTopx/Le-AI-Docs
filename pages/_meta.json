@@ -2,9 +2,9 @@
   "index": "Introduction",
   "basic": "Basic",
   "features": "Features",
+  "conversation-limits": "Conversation Limits",
   "api-key-configure": "API Key Configure",
-  "another": "Another Page",
-  "advanced": "Advanced (A Folder)",
+  "change-log": "Change Log",
   "about": "About",
   "try": {
     "type": "page",

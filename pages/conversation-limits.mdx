@@ -1,0 +1,20 @@
+# Conversation Limits
+
+This is currently the most frequently asked and feedback-received question.
+
+An example of the specific error message is as follows:
+
+```json copy
+{
+  "code": "context_length_exceeded",
+  "message": "This model's maximum context length is 8192 tokens. However, you requested 8384 tokens (6384 in the messages, 2000 in the completion). Please reduce the length of the messages or completion.",
+  "param": "messages",
+  "type": "invalid_request_error"
+}
+```
+
+The principle behind it is that each AI conversation model has a different content length limit for the same conversation. If the limit is exceeded, the conversation cannot continue, and clearing the conversation content or creating a new one is necessary.
+
+Currently, in order for AI to understand the context of your conversation, all communication records of your current conversation need to be transmitted to AI for analysis. Each vendor has its own limitations for this ability. For the same vendor, there are also different length restrictions for different models.
+
+In the future, it may be possible to use data compression or introduce vectors to help overcome this limitation.

@@ -1,4 +1,5 @@
 import { DocsThemeConfig } from "nextra-theme-docs";
+import { useRouter } from "next/router";
 
 const logo = (
   <span>
@@ -79,6 +80,14 @@ const config: DocsThemeConfig = {
     link: "https://github.com/Peek-A-Booo/L-GPT",
   },
   docsRepositoryBase: "https://github.com/Peek-A-Booo/L-GPT",
+  useNextSeoProps() {
+    const { asPath } = useRouter();
+    if (asPath !== "/") {
+      return {
+        titleTemplate: "%s – L-GPT Docs",
+      };
+    }
+  },
   banner: {
     key: "0.5.1-release",
     text: (
