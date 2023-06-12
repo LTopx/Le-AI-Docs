@@ -114,6 +114,12 @@ const config: DocsThemeConfig = {
       </a>
     ),
   },
+  editLink: {
+    text: null,
+  },
+  feedback: {
+    content: null,
+  },
   footer: {
     text: (
       <div className="flex flex-col w-full items-center sm:items-start">
