@@ -114,6 +114,9 @@ const config: DocsThemeConfig = {
       </a>
     ),
   },
+  sidebar: {
+    defaultMenuCollapseLevel: 1,
+  },
   editLink: {
     text: null,
   },
