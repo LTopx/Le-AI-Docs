@@ -1,0 +1,32 @@
+{
+  "index": "基本介绍",
+  "basic": "基本功能",
+  "features": "特色功能",
+  "conversation-limits": "会话限制",
+  "api-key-configure": "API Key 配置",
+  "token": "Token",
+  "change-log": "更新日志",
+  "about": "关于",
+  "try": {
+    "type": "page",
+    "title": "使用 L-GPT ↗",
+    "href": "https://gpt.ltopx.com",
+    "newWindow": true
+  },
+  "contact": {
+    "type": "menu",
+    "title": "联系我",
+    "items": {
+      "about": {
+        "title": "Twitter ↗",
+        "href": "https://twitter.com/peekbomb",
+        "newWindow": true
+      },
+      "contact": {
+        "title": "Telegram ↗",
+        "href": "https://t.me/+7fLJJoGV_bJhYTk1",
+        "newWindow": true
+      }
+    }
+  }
+}

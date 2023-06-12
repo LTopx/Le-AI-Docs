@@ -1,0 +1,20 @@
+# 会话限制
+
+这是目前最常被问到和收到反馈的问题。
+
+以下是特定错误信息的示例：
+
+```json copy
+{
+  "code": "context_length_exceeded",
+  "message": "This model's maximum context length is 8192 tokens. However, you requested 8384 tokens (6384 in the messages, 2000 in the completion). Please reduce the length of the messages or completion.",
+  "param": "messages",
+  "type": "invalid_request_error"
+}
+```
+
+其原理是对于每个 AI 对话模型，其同一对话的内容长度限制是不同的。如果超过了限制，对话就无法继续，需要清除对话内容或创建新的对话。
+
+目前，为了让 AI 理解您对话的上下文，需要将您当前对话的所有通信记录传输给 AI 进行分析。每个供应商对这种能力都有其自身的限制。对于同一供应商，不同的模型也存在不同的长度限制。
+
+未来可以尝试使用数据压缩或引入向量数据库来帮助缓解和突破这种限制。

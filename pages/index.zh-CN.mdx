@@ -1,0 +1,118 @@
+# 基本介绍
+
+## 什么是 L-GPT？
+
+L-GPT 是一个开源项目，集成了各种大型语言模型的开放 API，为用户提供高度聚合和有用的人工智能服务。它不仅支持基本的对话功能，还将支持更多功能，如文本转语音、语音输入、文件解析、插件等。它可以在许多方面提高学习、工作和生活效率。
+
+## 为什么要开始做这个项目？
+
+众所周知，我们目前正处于人工智能时代，2023 年将是人工智能的元年。开始做这个项目的初衷是希望更深入地学习和了解与人工智能相关的知识和内容，跟上时代的发展，保持对技术方向和时事的敏感性。同时，作为一名程序员，我也希望进一步拓宽自己的视野和技术栈，在这个信息和技术的时代保持更强的竞争力。
+
+## 支持的客户端
+
+目前，仅支持 Web 平台。计划扩展到所有平台，预计于 6 月开始开发 PC 平台客户端。
+
+- [x] Web
+- [ ] iOS
+- [ ] macOS
+- [ ] Windows
+- [ ] Android
+
+## 文档目录
+
+在这里，您可以了解有关 L-GPT 的所有内容。
+
+import { Card, Cards } from "nextra-theme-docs";
+
+<Cards className="flex flex-col">
+  <Card
+    icon={
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={1.5}
+        stroke="currentColor"
+        className="h-6 w-6"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z"
+        />
+      </svg>
+    }
+    title="Basic →"
+    href="/basic"
+  />
+  <Card
+    icon={
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth="1.5"
+        stroke="currentColor"
+        className="h-6 w-6"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09zM18.259 8.715L18 9.75l-.259-1.035a3.375 3.375 0 00-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 002.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 002.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 00-2.456 2.456zM16.894 20.567L16.5 21.75l-.394-1.183a2.25 2.25 0 00-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 001.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 001.423 1.423l1.183.394-1.183.394a2.25 2.25 0 00-1.423 1.423z"
+        ></path>
+      </svg>
+    }
+    title="Features →"
+    href="/features"
+  />
+  <Card
+    icon={
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth="1.5"
+        stroke="currentColor"
+        className="h-6 w-6"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244"
+        ></path>
+      </svg>
+    }
+    title="Conversation Limits →"
+    href="/conversation-limits"
+  />
+  <Card
+    icon={
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        className="h-6 w-6"
+      >
+        <path
+          fillRule="evenodd"
+          d="M14.615 1.595a.75.75 0 01.359.852L12.982 9.75h7.268a.75.75 0 01.548 1.262l-10.5 11.25a.75.75 0 01-1.272-.71l1.992-7.302H3.75a.75.75 0 01-.548-1.262l10.5-11.25a.75.75 0 01.913-.143z"
+          clipRule="evenodd"
+        ></path>
+      </svg>
+    }
+    title="API Key Configure →"
+    href="/api-key-configure"
+  />
+  <Card
+    icon={
+      <svg viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M20.56 18H3.44C2.65 18 2 17.37 2 16.59V7.41C2 6.63 2.65 6 3.44 6h17.12c.79 0 1.44.63 1.44 1.41v9.18c0 .78-.65 1.41-1.44 1.41M6.81 15.19v-3.66l1.92 2.35l1.92-2.35v3.66h1.93V8.81h-1.93l-1.92 2.35l-1.92-2.35H4.89v6.38h1.92M19.69 12h-1.92V8.81h-1.92V12h-1.93l2.89 3.28L19.69 12Z"
+        ></path>
+      </svg>
+    }
+    title="Change Log →"
+    href="/change-log"
+  />
+</Cards>

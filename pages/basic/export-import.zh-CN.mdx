@@ -1,17 +1,17 @@
-# Export / Import
+# 导入、导出
 
-Currently, all session records and API Keys of L-GPT are saved locally in the browser (cloud storage feature will be available in the future). However, it also provides import and export functions for users to quickly transfer their local data to other devices and browsers.
+目前，L-GPT 的所有会话记录和 API 密钥都保存在本地浏览器的 localstorage 中（将来会提供云存储功能）。然而，也提供了导入和导出功能，以便用户能够快速地将本地数据转移到其他设备和浏览器中。
 
-### One-click export
+### 一键导出
 
-Export a JSON formatted file. One-click export supports exporting the following content:
+导出 JSON 格式文件。一键导出支持导出以下内容：
 
-- Chat conversation records
-- Locally configured API keys
-- Basic configurations of various language models
-- Locally customized prompts (to be improved)
+- 聊天记录
+- 本地配置的 API 密钥
+- 各种语言模型的基本配置
+- 本地自定义的 Prompt（待完善）
 
-Export example :
+导出内容 示例 :
 
 ```json filename="LGPT_Export_2023-06-03.json" copy
 {
@@ -102,8 +102,8 @@ Export example :
 }
 ```
 
-### One-click import
+### 一键导入
 
-Simply select the exported JSON file. (Note that this will overwrite your local chat history and API key configuration.)
+选择您需要导入的 JSON 文件。（请注意，这将覆盖您的本地聊天历史记录和 API 密钥配置，本地自定义的 prompt 等。）
 
 ![Export / Import](/basic/export-import/export-import.png)

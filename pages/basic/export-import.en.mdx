@@ -1,0 +1,109 @@
+# Export / Import
+
+Currently, all session records and API Keys of L-GPT are saved locally in the browser (cloud storage feature will be available in the future). However, it also provides import and export functions for users to quickly transfer their local data to other devices and browsers.
+
+### One-click export
+
+Export a JSON formatted file. One-click export supports exporting the following content:
+
+- Chat conversation records
+- Locally configured API keys
+- Basic configurations of various language models
+- Locally customized prompts (to be improved)
+
+Export example :
+
+```json filename="LGPT_Export_2023-06-03.json" copy
+{
+  "configure": {
+    "openai": {
+      "apiKey": "sk-xxxxxx",
+      "proxy": "",
+      "temperature": 1,
+      "max_tokens": 2000
+    },
+    "azure": {
+      "apiKey": "",
+      "resourceName": "",
+      "temperature": 1,
+      "max_tokens": 2000
+    }
+  },
+  "messages": {
+    "activeId": "e0a369f1-7cdb-45ee-85de-f8599e1828f7",
+    "list": [
+      {
+        "channel_id": "b4a886a9-1fa0-4592-bbcb-5cc75334a4ca",
+        "channel_icon": "RiChatSmile2Line",
+        "channel_name": "Title: Chat Title.",
+        "channel_model": {
+          "type": "openai",
+          "name": "gpt-3.5-turbo"
+        },
+        "channel_prompt": "You are ChatGPT, a large language model trained by OpenAI. Follow the user's instructions carefully. Respond using markdown.",
+        "channel_cost": {
+          "tokens": 25,
+          "usd": 0.00005,
+          "function_tokens": 25,
+          "function_usd": 0.00005,
+          "total_tokens": 50,
+          "total_usd": 0.0001
+        },
+        "chat_list": [
+          {
+            "id": "2167f83b-938f-4053-abf3-d096d0b6271e",
+            "role": "user",
+            "time": "1685635001737",
+            "content": "hello world"
+          },
+          {
+            "id": "ec33ef7c-5ea9-4c84-8cd4-634512ae94c7",
+            "role": "assistant",
+            "time": "1685635003501",
+            "content": "Hello there! How can I assist you today?"
+          }
+        ]
+      },
+      {
+        "channel_id": "e0a369f1-7cdb-45ee-85de-f8599e1828f7",
+        "channel_icon": "RiChatSmile2Line",
+        "channel_name": "",
+        "channel_model": {
+          "type": "openai",
+          "name": "gpt-3.5-turbo"
+        },
+        "channel_prompt": "You are ChatGPT, a large language model trained by OpenAI. Follow the user's instructions carefully. Respond using markdown.",
+        "channel_cost": {
+          "tokens": 139,
+          "usd": 0.00028,
+          "function_tokens": 0,
+          "function_usd": 0,
+          "total_tokens": 139,
+          "total_usd": 0.00028
+        },
+        "chat_list": [
+          {
+            "id": "ef771f41-c873-45a3-ad8e-76cba4f624ed",
+            "role": "user",
+            "time": "1685699677179",
+            "content": "- 支持的客户端\n    - Supported Clients\n        - 目前仅支持web端。后续计划是拓展到全平台，预计6月份开始pc平台客户端的开发\n        - Currently, only web platform is supported. The plan is to expand to all platforms, with the development of PC platform client expected to start in June."
+          },
+          {
+            "id": "9d381d95-eab0-467f-9abf-fd4f4e92a508",
+            "role": "assistant",
+            "time": "1685699678129",
+            "content": "**支持的客户端**\n\n- 目前仅支持Web端。\n- 后续计划是拓展到全平台。\n-"
+          }
+        ]
+      }
+    ]
+  },
+  "prompts": []
+}
+```
+
+### One-click import
+
+Choose the JSON file you want to import. (Note that this will overwrite your local chat history, API key configuration, locally customized prompts, etc.)
+
+![Export / Import](/basic/export-import/export-import.png)

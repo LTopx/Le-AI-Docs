@@ -107,10 +107,10 @@ const config: DocsThemeConfig = {
     );
   },
   banner: {
-    key: "0.6.0-release",
+    key: "0.6.1-release",
     text: (
       <a href="https://gpt.ltopx.com" target="_blank">
-        🎉 L-GPT v0.6.0 is released. Learn more →
+        🎉 L-GPT v0.6.1 is released. Learn more →
       </a>
     ),
   },
@@ -132,6 +132,10 @@ const config: DocsThemeConfig = {
       </div>
     ),
   },
+  i18n: [
+    { locale: "en", text: "English" },
+    { locale: "zh-CN", text: "中文" },
+  ],
 };
 
 export default config;

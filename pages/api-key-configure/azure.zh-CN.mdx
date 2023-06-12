@@ -1,0 +1,60 @@
+# Azure OpenAI API Key 配置
+
+您可以在未登录的情况下使用 L-GPT，但必须配置使用您自己的 API 密钥。
+
+### API Key
+
+配置您自己的 OpenAI API Key。 [此处获取 API Key](https://portal.azure.com/)
+
+如果没有配置，则必须在登录后使用作者提供的 API Key 服务。
+
+### 资源名称（Resource Name）
+
+与 OpenAI API 的官方配置方式不同，创建 Azure OpenAI 服务时，会需要首先创建一个自己的独立资源实例名称。因此，在配置时，您需要填写您创建的名称。
+
+- 由于该服务由 Azure 提供，因此必须按 Azure 的要求配置资源名称。（会有一点点繁琐）
+- 只需要创建一个资源名称。因为可以在同一资源名称下同时部署 gpt-3.5 / gpt-4（如果有权限的话）。
+
+![Resource Name](/api-key-configure/azure/resource-name.png)
+
+### 部署名称（Deployments）
+
+创建好资源名称后，您可以开始部署所需的语言模型。
+
+- 选择模型：您可以选择要部署的模型版本，例如 gpt-35-turbo、gpt-4 等。
+- 部署名称：指定要创建的模型名称。
+  - 注意：Azure 规定部署名称不能包含特殊字符，如“\_”和“.”，因此您的名称不能与官方 OpenAI 模型名称相同。例如，gpt-3.5-turbo 这样的名称是不允许的。
+
+![Deployments](/api-key-configure/azure/deployments.png)
+
+### L-GPT 配置
+
+创建资源名称和部署名称后，您可以在 L-GPT 上对它们进行配置。L-GPT 提供了三个常用的 Azure OpenAI 模型版本：gpt-3.5/gpt-4/gpt-4 32k。您只需要在相应的版本中填写您的命名部署名称。
+
+例如，如果您已经创建了一个名为 gpt-4-32k 的模型版本，并且名称为 lgpt-4-32k，您只需要点击“gpt-4-32k”部分的标签标签，在“编辑部署”弹出框中输入 lgpt-4-32k 即可。
+
+![configure-1](/api-key-configure/azure/configure-1.png)
+
+![configure-2](/api-key-configure/azure/configure-2.png)
+
+### Temperature
+
+与 OpenAI 的配置方式相同。
+
+> 官方释义：What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic.
+
+在 L-GPT 中，这个设置已经被简化为只有三种模式可供选择：确定性/中性/随机性。您可以根据自己的需要调整此参数。
+
+### Max Tokens
+
+Same configuration as OpenAI.
+
+> 在 L-GPT 中，默认的 max tokens 为 2000。
+
+聊天会话中单次生成的最大 Token 数量。
+
+输入 Token 和生成 Token 的总长度由模型的上下文长度限制。
+
+### 完整配置
+
+![Azure OpenAI API Key](/api-key-configure/azure/configure.png)
