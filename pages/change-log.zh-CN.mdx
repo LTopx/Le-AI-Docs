@@ -1,8 +1,30 @@
 import { Screenshot } from "components/screenshot";
 import v0611 from "../public/change-log/v0.6.1-1.png";
 import v0601 from "../public/change-log/v0.6.0-1.png";
+import v0711 from "../public/change-log/v0.7.1-1.png";
+import v0712 from "../public/change-log/v0.7.1-2.png";
 
 # L-GPT 更新日志
+
+## v0.7.1
+
+> 2023-06-27
+
+<div className="flex gap-2">
+  <Screenshot src={v0711} alt="Project link" full />
+  <Screenshot src={v0712} alt="Project link" full />
+</div>
+
+### 新增
+
+- 新增 vervel 全局变量 CRON_SECRET, 用于定时任务的安全校验
+- 新增 Azure TTS 功能，支持将会话回复的内容转换为语音（Premium）
+
+### 调整
+
+- 优化初始获取用户信息的逻辑：未登录用户不拉取用户信息
+- 完善 OpenAI 返回报错信息的展示
+- 优化部分国际化内容
 
 ## v0.7.0
 

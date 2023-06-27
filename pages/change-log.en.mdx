@@ -1,8 +1,30 @@
 import { Screenshot } from "components/screenshot";
 import v0611 from "../public/change-log/v0.6.1-1.png";
 import v0601 from "../public/change-log/v0.6.0-1.png";
+import v0711 from "../public/change-log/v0.7.1-1.png";
+import v0712 from "../public/change-log/v0.7.1-2.png";
 
 # L-GPT Change Log
+
+## v0.7.1
+
+> 2023-06-27
+
+<div className="flex gap-2">
+  <Screenshot src={v0711} alt="Project link" full />
+  <Screenshot src={v0712} alt="Project link" full />
+</div>
+
+### Add
+
+- Added the global variable CRON_SECRET for secure verification of scheduled tasks.
+- Added Azure TTS feature, supporting conversion of conversation replies into voice (Premium).
+
+### Changed
+
+- Optimize the logic of initial user information retrieval: do not retrieve user information for unauthenticated users.
+- Improve the display of error messages returned by OpenAI
+- Optimize some internationalization content
 
 ## v0.7.0
 
