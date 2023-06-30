@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "pm2": "next start -p 6000"
+    "pm2": "next start -p 8000"
   },
   "repository": {
     "type": "git",
