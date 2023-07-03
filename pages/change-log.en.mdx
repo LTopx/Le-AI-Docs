@@ -4,12 +4,21 @@ import v0601 from "../public/change-log/v0.6.0-1.png";
 import v0711 from "../public/change-log/v0.7.1-1.png";
 import v0712 from "../public/change-log/v0.7.1-2.png";
 import v0721 from "../public/change-log/v0.7.2-1.png";
+import v0731 from "../public/change-log/v0.7.3-1.jpg";
+import v0732 from "../public/change-log/v0.7.3-2.jpg";
+import v0733 from "../public/change-log/v0.7.3-3.jpg";
 
 # L-GPT Change Log
 
 ## v0.7.3
 
-> 2023-07-03
+> 2023-07-04
+
+<div className="flex gap-2">
+  <Screenshot src={v0731} alt="Project link" full />
+  <Screenshot src={v0733} alt="Project link" full />
+</div>
+<Screenshot src={v0732} alt="Project link" full />
 
 ### Fixed
 
@@ -22,13 +31,14 @@ import v0721 from "../public/change-log/v0.7.2-1.png";
 - Add an input box to display the language model currently used in the session at the top
 - Add the function of setting the maximum length of context carried in a session
 - Add a "New Conversation" shortcut button at the top of the input box
-- Add Plausible Analytics tracking
+- Add Plausible Analytics tracking and replace Vercel Analytics
 
 ### Changed
 
 - Adjust layout of top buttons in input field
 - Non-Premium members can only create a maximum of 10 sessions (Premium).
 - Upgrade Azure API version to 2023-06-01-preview
+- Optimize the avatar icons in the conversation list to display according to the currently used language model.
 
 ## v0.7.2
 

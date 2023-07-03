@@ -4,12 +4,21 @@ import v0601 from "../public/change-log/v0.6.0-1.png";
 import v0711 from "../public/change-log/v0.7.1-1.png";
 import v0712 from "../public/change-log/v0.7.1-2.png";
 import v0721 from "../public/change-log/v0.7.2-1.png";
+import v0731 from "../public/change-log/v0.7.3-1.jpg";
+import v0732 from "../public/change-log/v0.7.3-2.jpg";
+import v0733 from "../public/change-log/v0.7.3-3.jpg";
 
 # L-GPT 更新日志
 
 ## v0.7.3
 
-> 2023-07-03
+> 2023-07-04
+
+<div className="flex gap-2">
+  <Screenshot src={v0731} alt="Project link" full />
+  <Screenshot src={v0733} alt="Project link" full />
+</div>
+<Screenshot src={v0732} alt="Project link" full />
 
 ### 修复
 
@@ -22,13 +31,14 @@ import v0721 from "../public/change-log/v0.7.2-1.png";
 - 新增输入框顶部显示当前会话使用的语言模型
 - 新增设置会话携带上下文数量的最大长度功能
 - 输入框顶部新增”新建会话“快捷操作按钮
-- 新增 Plausible Analytics 统计
+- 新增 Plausible Analytics 统计，替换 vercel analytics
 
 ### 调整
 
 - 调整输入框顶部按钮布局
 - 调整非会员最多只能创建 10 个会话（Premium）
 - 升级 Azure api-version 为 2023-06-01-preview
+- 优化会话列表头像图标，按照当前使用的语言模型显示
 
 ## v0.7.2
 
