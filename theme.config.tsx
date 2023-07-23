@@ -107,10 +107,10 @@ const config: DocsThemeConfig = {
     );
   },
   banner: {
-    key: "0.7.2-release",
+    key: "0.8.0-release",
     text: (
       <a href="https://gpt.ltopx.com" target="_blank">
-        🎉 L-GPT v0.7.2 is released. Get to know →
+        🎉 L-GPT v0.8.0 is released. Get to know →
       </a>
     ),
   },
