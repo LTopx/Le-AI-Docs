@@ -1,6 +1,6 @@
 # L-GPT Docs
 
-This is a template for creating documentation with [L-GPT](https://gpt.ltopx.com).
+This is a template for creating documentation with [L-GPT](https://chat.ltopx.com).
 
 [**Live Demo →**](https://nextra-docs-template.vercel.app)
 
