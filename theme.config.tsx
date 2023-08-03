@@ -1,9 +1,11 @@
+import Image from "next/image";
 import { DocsThemeConfig } from "nextra-theme-docs";
 import { useRouter } from "next/router";
 import { useConfig } from "nextra-theme-docs";
 
 const logo = (
-  <span>
+  <div className="flex items-center">
+    <Image src="/logo.png" alt="logo" width={40} height={40} />
     <svg height="30" viewBox="0 0 360 65" xmlns="http://www.w3.org/2000/svg">
       <mask id="satori_om-id">
         <rect x="0" y="0" width="360" height="65" fill="#fff" />
@@ -72,7 +74,7 @@ const logo = (
         transition: mask-position 1s ease, -webkit-mask-position 1s ease;
       }
     `}</style>
-  </span>
+  </div>
 );
 
 const config: DocsThemeConfig = {
@@ -102,7 +104,7 @@ const config: DocsThemeConfig = {
           name="og:title"
           content={title ? title + " – L-GPT Docs" : "L-GPT Docs"}
         />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
       </>
     );
   },
