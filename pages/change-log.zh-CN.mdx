@@ -8,8 +8,30 @@ import v0731 from "../public/change-log/v0.7.3-1.jpg";
 import v0732 from "../public/change-log/v0.7.3-2.jpg";
 import v0733 from "../public/change-log/v0.7.3-3.jpg";
 import v0811 from "../public/change-log/v0.8.1-1.png";
+import v0821 from "../public/change-log/v0.8.2-1.png";
 
 # L-GPT 更新日志
+
+## v0.8.2
+
+> 2023-08-07
+
+<Screenshot src={v0821} alt="Project link" full />
+
+### 修复
+
+- 修复生产环境可能缺失 AUTH_SECRET 的问题
+
+### 新增
+
+- 新增支持 Azure GPT-4/GPT-4-32K
+- 未配置 NEXT_PUBLIC_AZURE_OPENAI_RESOURCE_NAME 时的报错信息提示
+
+### 调整
+
+- 调整环境变量配置和相关代码逻辑，现在无需任何环境变量即可一键部署
+- 调整 readme 文档
+- 调整环境变量示例文档 .env.local.demo
 
 ## v0.8.1
 
