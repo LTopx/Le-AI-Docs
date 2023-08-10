@@ -1,6 +1,7 @@
 {
   "prompt-market": "Prompt 集市",
   "tts": "文字转语音",
+  "plugin": "插件功能",
   "cloud-synchronous": "云同步",
   "team": "团队功能"
 }
