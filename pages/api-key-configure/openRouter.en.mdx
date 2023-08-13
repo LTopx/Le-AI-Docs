@@ -1,0 +1,29 @@
+# OpenRouter API KEY Configuration
+
+You can use L-GPT without logging in, but you must configure it to use your own API key.
+
+### API KEY
+
+Configure your own OpenRouter API KEY. [Get the API KEY here](https://openrouter.ai/)
+
+- OpenRouter is an aggregator of large-scale model API services, which includes almost all mainstream language model services on the market.
+- Obtaining an API KEY is very simple, just register an account and generate it directly.
+- If not configured, you must use the author's provided API KEY service after logging in.
+
+### Temperature
+
+> Official definition: What sampling temperature to use, between 0 and 2. Higher values like 0.8 will make the output more random, while lower values like 0.2 will make it more focused and deterministic.
+
+In L-GPT, this setting has been simplified to only three modes to choose from: Deterministic/Neutral/Randomness. You can adjust this parameter according to your needs.
+
+### Max Tokens
+
+> Since the maximum token limit for PaLM models in OpenRouter is set at 1025, it is temporarily limited to 1025 in L-GPT as well.
+
+The maximum number of tokens generated per chat session.
+
+The input token and generated token lengths are limited by the context length of the model.
+
+### Complete Configuration
+
+![OpenRouter API Key](/api-key-configure/openRouter/configure.png)

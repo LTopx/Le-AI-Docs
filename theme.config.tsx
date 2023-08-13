@@ -116,6 +116,13 @@ const config: DocsThemeConfig = {
       </a>
     ),
   },
+  search: {
+    placeholder: () => {
+      const router = useRouter();
+      if (router.locale === "zh-CN") return "搜索文档...";
+      return "Search documentation…";
+    },
+  },
   sidebar: {
     defaultMenuCollapseLevel: 1,
   },

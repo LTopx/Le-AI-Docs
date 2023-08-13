@@ -20,13 +20,18 @@
     "title": "Contact",
     "items": {
       "about": {
-        "title": "Twitter ↗",
+        "title": "X(Twitter) ↗",
         "href": "https://twitter.com/peekbomb",
         "newWindow": true
       },
       "contact": {
         "title": "Telegram ↗",
         "href": "https://t.me/+7fLJJoGV_bJhYTk1",
+        "newWindow": true
+      },
+      "blog": {
+        "title": "Blog ↗",
+        "href": "https://goethan.cc/",
         "newWindow": true
       }
     }

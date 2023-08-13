@@ -1,6 +1,31 @@
 # 插件功能
 
-## 谷歌搜索
+## 谷歌搜索（新）
+
+### 简介
+
+ChatGPT 目前的训练数据只截止到 2021 年 9 月，因此很多实时信息是无法回答的。为了解决这个问题，我们接入了谷歌搜索插件，可以让 ChatGPT 回答一些实时信息。目前市面上有不少谷歌搜索的 API，调研之后选择了一个比较火热的 API：[Serper](https://serper.dev/)
+
+相比于谷歌官方的搜索 API，这个 API 的优势在于：
+
+- 配置简单，无需像官方 API 一样有复杂的申请流程来获取引擎 ID 和 API KEY
+- 每个账号有 2500 次的免费搜索额度
+- 号称是世界上最快最便宜的谷歌搜索 API：The World's Fastest and Cheapest
+  Google Search API
+
+### 如何获取
+
+- 跳转 Serper 官网：https://serper.dev 注册账号
+- 账号注册成功后，直接切换到 `API key` 的 tab 点击 `Copy`即可
+  ![new-step-1.png](/features/plugin/new-step-1.png)
+
+### 如何使用
+
+将获取到的`API key`填入到 L-GPT 插件配置当中，并“启用谷歌搜索”，即可使用。
+
+![new-step-2.png](/features/plugin/new-step-2-zh-CN.png)
+
+## 谷歌搜索（暂时废弃）
 
 ### 简介
 
