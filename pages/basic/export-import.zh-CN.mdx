@@ -13,92 +13,96 @@
 
 导出内容 示例 :
 
-```json filename="LGPT_Export_2023-06-03.json" copy
+```json filename="LGPT_Export_2023_8_13.json" copy
 {
   "configure": {
     "openai": {
-      "apiKey": "sk-xxxxxx",
+      "apiKey": "",
       "proxy": "",
       "temperature": 1,
-      "max_tokens": 2000
+      "max_tokens": 1000
     },
     "azure": {
       "apiKey": "",
       "resourceName": "",
       "temperature": 1,
-      "max_tokens": 2000
+      "max_tokens": 1000
+    },
+    "openRouter": {
+      "apiKey": "12345",
+      "temperature": 1,
+      "max_tokens": 1000
     }
   },
   "messages": {
-    "activeId": "e0a369f1-7cdb-45ee-85de-f8599e1828f7",
+    "activeId": "9cab733f-14c3-4047-a627-94210ae8efda",
     "list": [
       {
-        "channel_id": "b4a886a9-1fa0-4592-bbcb-5cc75334a4ca",
-        "channel_icon": "RiChatSmile2Line",
-        "channel_name": "Title: Chat Title.",
-        "channel_model": {
-          "type": "openai",
-          "name": "gpt-3.5-turbo"
-        },
-        "channel_prompt": "You are ChatGPT, a large language model trained by OpenAI. Follow the user's instructions carefully. Respond using markdown.",
-        "channel_cost": {
-          "tokens": 25,
-          "usd": 0.00005,
-          "function_tokens": 25,
-          "function_usd": 0.00005,
-          "total_tokens": 50,
-          "total_usd": 0.0001
-        },
-        "chat_list": [
-          {
-            "id": "2167f83b-938f-4053-abf3-d096d0b6271e",
-            "role": "user",
-            "time": "1685635001737",
-            "content": "hello world"
-          },
-          {
-            "id": "ec33ef7c-5ea9-4c84-8cd4-634512ae94c7",
-            "role": "assistant",
-            "time": "1685635003501",
-            "content": "Hello there! How can I assist you today?"
-          }
-        ]
-      },
-      {
-        "channel_id": "e0a369f1-7cdb-45ee-85de-f8599e1828f7",
+        "channel_id": "599c8ef6-0e40-42c9-8363-60a022fddf29",
         "channel_icon": "RiChatSmile2Line",
         "channel_name": "",
         "channel_model": {
           "type": "openai",
           "name": "gpt-3.5-turbo"
         },
-        "channel_prompt": "You are ChatGPT, a large language model trained by OpenAI. Follow the user's instructions carefully. Respond using markdown.",
+        "channel_prompt": "You are a helpful AI assistant.",
+        "channel_prompt_name": "system",
         "channel_cost": {
-          "tokens": 139,
-          "usd": 0.00028,
+          "tokens": 0,
+          "usd": 0,
           "function_tokens": 0,
           "function_usd": 0,
-          "total_tokens": 139,
-          "total_usd": 0.00028
+          "total_tokens": 0,
+          "total_usd": 0
         },
+        "channel_loading_connect": false,
+        "channel_loading": false,
+        "channel_context_length": 8,
+        "channel_plugins": [],
+        "chat_list": []
+      },
+      {
+        "channel_id": "9cab733f-14c3-4047-a627-94210ae8efda",
+        "channel_icon": "RiChatSmile2Line",
+        "channel_name": "02 + 3 = 5",
+        "channel_model": {
+          "type": "openRouter",
+          "name": "anthropic/claude-instant-v1"
+        },
+        "channel_prompt": "You are a helpful AI assistant.",
+        "channel_prompt_name": "system",
+        "channel_cost": {
+          "tokens": 29,
+          "usd": 0.00012,
+          "function_tokens": 77,
+          "function_usd": 0.00031,
+          "total_tokens": 106,
+          "total_usd": 0.00043
+        },
+        "channel_loading_connect": false,
+        "channel_loading": false,
+        "channel_context_length": 8,
+        "channel_plugins": [],
         "chat_list": [
           {
-            "id": "ef771f41-c873-45a3-ad8e-76cba4f624ed",
+            "id": "94063445-bb30-45a1-95f0-ec83e4fb1974",
             "role": "user",
-            "time": "1685699677179",
-            "content": "- 支持的客户端\n    - Supported Clients\n        - 目前仅支持web端。后续计划是拓展到全平台，预计6月份开始pc平台客户端的开发\n        - Currently, only web platform is supported. The plan is to expand to all platforms, with the development of PC platform client expected to start in June."
+            "time": "1691900066739",
+            "content": "02+3",
+            "tts_loading": false
           },
           {
-            "id": "9d381d95-eab0-467f-9abf-fd4f4e92a508",
+            "id": "15f128b3-a940-468f-8a81-b0e48b05208b",
             "role": "assistant",
-            "time": "1685699678129",
-            "content": "**支持的客户端**\n\n- 目前仅支持Web端。\n- 后续计划是拓展到全平台。\n-"
+            "time": "1691900070378",
+            "content": "02 + 3 = 5.",
+            "tts_loading": false
           }
         ]
       }
     ]
   },
-  "prompts": []
+  "characters": []
 }
 ```
 
