@@ -2,9 +2,30 @@
 
 ### Introduction
 
-This is a controversial and costly matter. The following are the planned directions for development:
+Allows users to manually backup and sync system settings and session content to the cloud for use on different devices.
 
-- Real-time account configuration and synchronization of chat session content will not be provided. Users will only be allowed to manually synchronize the session to avoid privacy concerns.
-- Free synchronization functionality will be provided in the early stages when costs are low. If costs become too high in the future, fees may be considered.
+### Backup Rules
 
-If you have any better suggestions, you can join the [Telegram](https://t.me/+7fLJJoGV_bJhYTk1) group, contact me on [X(Twitter)](https://twitter.com/peekbomb), or discuss it on [Github](https://github.com/Peek-A-Booo/L-GPT/discussions).
+- L-GPT will never automatically sync any of your information. This includes but is not limited to session lists, configuration information, and various API keys.
+- All backup and restore operations in L-GPT can only be triggered manually, and there are no plans to develop automatic backup and restore functionality in the future.
+- All data is stored locally on the browser and device by default, and no one else except yourself can access this data.
+- When using the backup and cloud sync feature, L-GPT will encrypt the data locally with an AES encryption key provided by you before uploading it to the cloud. The same key is required for decryption during data restoration.
+- Please make sure to keep your encryption key safe. If you forget the key, there is no way to recover your backed-up data.
+
+  Special Note:
+
+- Each backup will overwrite existing backup data in the cloud without merging or compatibility handling. Previous backup data will be lost.
+- Each time you restore data, it will overwrite all local data without merging or compatibility handling.
+- Currently, backups only support full backups including session lists, system configurations, and API keys.
+
+### Operate
+
+#### Backup
+
+- Click on the ☁️ backup button in the lower left corner of the system, enter your local encryption key, and click the `Backup` button. The system will encrypt your data using AES encryption algorithm with the encryption key you entered, and then upload it to the cloud.
+
+#### Restore
+
+- Click on the ☁️ backup button in the lower left corner of the system, enter your local encryption key, and click the `Restore` button. The system will retrieve encrypted data from the cloud using your inputted encryption key and decrypt it using a local key.
+
+![backup1](/features/backup/backup-1-en.png)
