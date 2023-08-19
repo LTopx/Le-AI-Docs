@@ -105,6 +105,13 @@ const config: DocsThemeConfig = {
           content={title ? title + " – L-GPT Docs" : "L-GPT Docs"}
         />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
+        {!!process.env.UMAMI_WEBSITE_ID && (
+          <script
+            async
+            src="https://umami.ltopx.com/script.js"
+            data-website-id={process.env.UMAMI_WEBSITE_ID}
+          ></script>
+        )}
       </>
     );
   },
