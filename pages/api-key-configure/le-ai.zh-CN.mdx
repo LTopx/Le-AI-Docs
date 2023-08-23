@@ -1,0 +1,26 @@
+# Le-AI API Key
+
+### 什么是 Le-AI
+
+Le-AI API Key 是 L-GPT 为用户提供的一种身份认证方式，用户可以通过该 API Key 来使用 L-GPT 的服务。所有的 Key 都是以 `leai-` 开头。
+
+### 如何生成
+
+- 在系统右上角：账户中心-令牌管理 页面生成。
+- Le-AI API Key 由主账户生成，每个主账户最多生成 3 个 Key。
+- 可以分别配置每个 API Key 的启用状态、额度限制，过期时间等属性。
+- 可以随时删除不需要的 Key。
+
+![Generate](/api-key-configure/le-ai/1-zh-CN.png)
+
+### 如何使用
+
+- <div className="text-rose-500 font-bold">
+    注意，一旦配置了 Le-AI API Key，将会优先使用该 API Key 的配置。其他
+    OpenAI、Azure OpenAI、OpenRouter 的 Key(即使配置了) 将会被忽略。
+  </div>
+- 在模型配置页面配置 Le-AI API 令牌后，无须登录账户即可使用所有主账号权限内的 L-GPT 的服务。
+- 所有 Le-AI API 令牌消耗的额度都会计入主账号的额度中。
+- 后续 `L-GPT 客户端` 将采用 Le-AI API 令牌的模式。
+
+![Usage](/api-key-configure/le-ai/2-zh-CN.png)
