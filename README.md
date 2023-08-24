@@ -1,6 +1,6 @@
-# L-GPT Docs
+# Le-AI Docs
 
-This is a template for creating documentation with [L-GPT](https://chat.ltopx.com).
+This is a template for creating documentation with [Le-AI](https://le-ai.app).
 
 [**Live Demo →**](https://nextra-docs-template.vercel.app)
 
