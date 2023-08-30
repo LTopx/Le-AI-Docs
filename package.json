@@ -1,5 +1,5 @@
 {
-  "name": "l-docs",
+  "name": "le-ai-docs",
   "version": "0.0.1",
   "description": "Documentation project for Le-AI project introduction and detailed explanation",
   "scripts": {
@@ -21,17 +21,17 @@
   "dependencies": {
     "clsx": "2.0.0",
     "next": "13.4.19",
-    "nextra": "2.12.0",
-    "nextra-theme-docs": "2.12.0",
+    "nextra": "2.12.3",
+    "nextra-theme-docs": "2.12.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "sharp": "0.32.5"
   },
   "devDependencies": {
-    "@types/node": "20.5.4",
+    "@types/node": "20.5.7",
     "autoprefixer": "10.4.15",
-    "postcss": "8.4.28",
+    "postcss": "8.4.29",
     "tailwindcss": "3.3.3",
-    "typescript": "5.1.6"
+    "typescript": "5.2.2"
   }
 }
