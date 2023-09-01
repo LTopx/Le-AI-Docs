@@ -3,6 +3,7 @@
   "basic": "Basic",
   "features": "Features",
   "license": "License Type",
+  "client": "Client",
   "faq": "FAQs",
   "api-key-configure": "API Key Configure",
   "token": "Token",

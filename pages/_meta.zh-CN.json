@@ -3,6 +3,7 @@
   "basic": "基本功能",
   "features": "特色功能",
   "license": "会员类型",
+  "client": "客户端",
   "faq": "常见问题",
   "api-key-configure": "API Key 配置",
   "token": "Token",

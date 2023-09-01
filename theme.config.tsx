@@ -53,10 +53,10 @@ const config: DocsThemeConfig = {
     );
   },
   banner: {
-    key: "0.8.4-release",
+    key: "0.9.0-release",
     text: (
       <a href="https://le-ai.app" target="_blank">
-        🎉 Le-AI v0.8.4 released. Get to know →
+        🎉 Le-AI v0.9.0 released. Get to know →
       </a>
     ),
   },
