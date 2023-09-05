@@ -14,9 +14,29 @@ import v0841 from "../public/change-log/v0.8.4-1-zh-CN.png";
 
 # Le-AI 更新日志
 
+## v0.9.1
+
+> 2023-09-05
+
+![v0.9.1-1](/change-log/v0.9.1-1-zh-CN.png)
+
+### 修复
+
+- 修复部署项目时配置自定义的 API Key 后鉴权逻辑有误的问题
+- 修复部分情况下回复出现乱码的问题
+- 修复 [#8](https://github.com/LTopx/Le-AI/issues/8)
+
+### 新增
+
+- 支持账号密码登录
+
+### 调整
+
+- 更新 Azure OpenAI API Version 为 2023-08-01-preview
+
 ## v0.9.0
 
-> 2023-09-01
+> 2023-09-02
 
 <div className="font-bold mt-6 text-emerald-500">
   终于推出了 Le-AI 客户端版本。目前支持 Windows, Mac
@@ -34,9 +54,12 @@ import v0841 from "../public/change-log/v0.8.4-1-zh-CN.png";
 - 修复 metadataBase 缺失的问题
 - 修复 OpenRouter Key 的跳转链接问题
 - 修复请求错误时没有携带跨域头的问题
+- 修复令牌页面 Table 的样式问题
+- 修复 issue of missing metadataBase and env variable [#6](https://github.com/LTopx/Le-AI/issues/6)
 
 ### 新增
 
+- 新增支持 Windows、Mac Beta 客户端
 - 新增支持一键清空会话
 - 新增令牌管理页面相关逻辑和数据库表构建
 - 新增左侧菜单重要公告提示

@@ -14,9 +14,29 @@ import v0841 from "../public/change-log/v0.8.4-1-en.png";
 
 # Le-AI Change Log
 
+## v0.9.1
+
+> 2023-09-05
+
+![v0.9.1-1](/change-log/v0.9.1-1-en.png)
+
+### Fixed
+
+- Fixed the issue of incorrect authentication logic after configuring a custom API Key when deploying a project
+- Fixed the issue of garbled characters in some cases when replying
+- Fixed [#8](https://github.com/LTopx/Le-AI/issues/8)
+
+### Add
+
+- Support for account/password login
+
+### Changed
+
+- Update Azure OpenAI API Version to 2023-08-01-preview
+
 ## v0.9.0
 
-> 2023-09-01
+> 2023-09-02
 
 <div className="font-bold mt-6 text-emerald-500">
   Finally, the Le-AI client version has been released. Currently, it supports
@@ -35,9 +55,12 @@ import v0841 from "../public/change-log/v0.8.4-1-en.png";
 - Fixing the issue of missing metadataBase.
 - Fixed the redirect link issue for OpenRouter Key.
 - Fixing the issue of not carrying cross-domain headers when requesting an error.
+- Fixed the style issue with the Table on the token page.
+- Fixed: issue of missing metadataBase and env variable [#6](https://github.com/LTopx/Le-AI/issues/6)
 
 ### Add
 
+- Added support for Windows and Mac Beta clients.
 - Added support for one-click session clearing
 - Added logic and database table construction for token management page
 - Added important announcement prompt in the left-side menu
