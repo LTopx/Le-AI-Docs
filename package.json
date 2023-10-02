@@ -1,6 +1,6 @@
 {
   "name": "le-ai-docs",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Documentation project for Le-AI project introduction and detailed explanation",
   "scripts": {
     "dev": "next dev",
