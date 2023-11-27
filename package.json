@@ -1,38 +1,50 @@
 {
   "name": "le-ai-docs",
   "version": "1.0.0",
-  "description": "Documentation project for Le-AI project introduction and detailed explanation",
+  "description": "Le-AI docs",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "pm2": "next start -p 9001"
+    "start": "next start"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/LTopx/L-DOCS.git"
+    "url": "git+https://github.com/LTopx/Le-AI-Docs-new.git"
   },
-  "author": "Ehtan Liu",
+  "author": "LTopx",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LTopx/L-DOCS/issues"
+    "url": "https://github.com/LTopx/Le-AI-Docs-new/issues"
   },
-  "homepage": "https://github.com/LTopx/L-DOCS",
+  "homepage": "https://github.com/LTopx/Le-AI-Docs-new/blob/main/README.md",
   "dependencies": {
+    "@egoist/tailwindcss-icons": "1.4.0",
+    "@radix-ui/react-accordion": "1.1.2",
+    "@radix-ui/react-dialog": "1.0.5",
+    "@radix-ui/react-dropdown-menu": "2.0.6",
+    "@radix-ui/react-slot": "1.0.2",
+    "class-variance-authority": "0.7.0",
     "clsx": "2.0.0",
-    "next": "13.5.3",
-    "nextra": "2.13.1",
-    "nextra-theme-docs": "2.13.1",
+    "framer-motion": "10.16.5",
+    "lucide-react": "0.293.0",
+    "next": "14.0.3",
+    "nextra": "2.13.2",
+    "nextra-theme-docs": "2.13.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sharp": "0.32.6"
+    "tailwind-merge": "2.0.0",
+    "tailwindcss-animate": "1.0.7"
   },
   "devDependencies": {
-    "@types/node": "20.8.0",
-    "@types/react": "18.2.24",
+    "@iconify-json/mdi": "1.1.56",
+    "@iconify-json/mingcute": "1.1.12",
+    "@iconify-json/ri": "1.1.13",
+    "@iconify-json/simple-icons": "1.1.80",
+    "@types/node": "20.10.0",
+    "@types/react": "18.2.38",
     "autoprefixer": "10.4.16",
     "postcss": "8.4.31",
-    "tailwindcss": "3.3.3",
-    "typescript": "5.2.2"
+    "tailwindcss": "3.3.5",
+    "typescript": "5.3.2"
   }
 }

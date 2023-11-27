@@ -1,0 +1,57 @@
+import Image from "next/image";
+import opengraph from "@public/opengraph-image.png";
+import { Cards, Card } from "nextra/components";
+
+# Le-AI
+
+<Image src={opengraph} alt="opengraph" className="rounded-lg" />
+
+## 什么是 Le-AI
+
+Le-AI 是一个开源的，基于 **OpenAI API** 的第三方客户端。使用 **Next.js** 开发，借助 **Tauri** 打包为客户端。
+
+## 支持的客户端
+
+<div className="my-6">手机 app 端的支持还在计划当中。</div>
+
+- [x] Web
+- [x] macOS
+- [x] Windows
+- [x] Linux
+- [ ] iOS
+- [ ] Android
+
+## 快速开始
+
+<Cards>
+  <Card
+    icon={<span className="w-6 h-6 i-mdi-star-face" />}
+    title="功能特性"
+    href="/client/features"
+  />
+  <Card
+    icon={<span className="w-6 h-6 i-mingcute-book-2-fill" />}
+    title="使用指南"
+    href="/client/guild"
+  />
+  <Card
+    icon={<span className="w-6 h-6 i-mdi-frequently-asked-questions" />}
+    title="常见问题"
+    href="/client/faq"
+  />
+  <Card
+    icon={<span className="w-6 h-6 i-mdi-code-not-equal-variant" />}
+    title="二次开发"
+    href="/client/develop"
+  />
+  <Card
+    icon={<span className="w-6 h-6 i-mingcute-document-3-fill" />}
+    title="更新日志"
+    href="/client/changeLog"
+  />
+  <Card
+    icon={<span className="w-6 h-6 i-mdi-information" />}
+    title="关于"
+    href="/client/about"
+  />
+</Cards>

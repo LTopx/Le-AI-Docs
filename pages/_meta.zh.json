@@ -1,0 +1,39 @@
+{
+  "index": {
+    "title": "首页",
+    "type": "page",
+    "theme": {
+      "layout": "raw"
+    },
+    "display": "hidden"
+  },
+  "client": {
+    "title": "Le-AI",
+    "type": "page"
+  },
+  "server": {
+    "title": "Le-AI-API",
+    "type": "page"
+  },
+  "contact": {
+    "title": "联系我",
+    "type": "menu",
+    "items": {
+      "x": {
+        "title": "X",
+        "href": "https://twitter.com/peekbomb",
+        "newWindow": true
+      },
+      "github": {
+        "title": "Github",
+        "href": "https://github.com/Peek-A-Booo",
+        "newWindow": true
+      },
+      "blog": {
+        "title": "Blog",
+        "href": "https://goethan.cc",
+        "newWindow": true
+      }
+    }
+  }
+}

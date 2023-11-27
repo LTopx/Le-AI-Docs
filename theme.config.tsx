@@ -1,33 +1,46 @@
+import React from "react";
 import Image from "next/image";
-import { DocsThemeConfig } from "nextra-theme-docs";
+import Link from "next/link";
 import { useRouter } from "next/router";
-import { useConfig } from "nextra-theme-docs";
+import { DocsThemeConfig, useConfig } from "nextra-theme-docs";
+import Language from "@/components/language";
+import Footer from "@/components/footer";
+import { Button } from "@/components/ui/button";
 
 const logo = (
-  <div className="flex gap-2 items-center">
-    <Image src="/logo.png" alt="logo" width={40} height={40} />
-    <div className="cursor-pointer flex font-extrabold text-transparent text-3xl gap-2 items-center select-none">
+  <div className="flex h-14 text-2xl gap-2 items-center logo">
+    <Image
+      className="cursor-pointer"
+      src="/logo.png"
+      alt="logo"
+      width={30}
+      height={30}
+    />
+    <div className="cursor-pointer flex font-extrabold text-transparent items-center select-none">
       <span className="bg-clip-text bg-logo bg-[size:400%] animate-flow">
-        Le-AI Docs
+        Le-AI
       </span>
     </div>
+    <style jsx>{`
+      .logo {
+        mask-image: linear-gradient(
+          60deg,
+          black 25%,
+          rgba(0, 0, 0, 0.2) 50%,
+          black 75%
+        );
+        mask-size: 400%;
+        mask-position: 0%;
+      }
+      .logo:hover {
+        mask-position: 100%;
+        transition: mask-position 1s ease, -webkit-mask-position 1s ease;
+      }
+    `}</style>
   </div>
 );
 
 const config: DocsThemeConfig = {
-  logo,
-  project: {
-    link: "https://github.com/LTopx/Le-AI",
-  },
-  docsRepositoryBase: "https://github.com/LTopx/Le-AI",
-  useNextSeoProps() {
-    const { asPath } = useRouter();
-    if (asPath !== "/") {
-      return {
-        titleTemplate: "%s – Le-AI Docs",
-      };
-    }
-  },
   head: function useHead() {
     const { title } = useConfig();
 
@@ -52,23 +65,49 @@ const config: DocsThemeConfig = {
       </>
     );
   },
+  useNextSeoProps() {
+    const { asPath } = useRouter();
+
+    if (asPath === "/") return { titleTemplate: "Le-AI" };
+
+    return { titleTemplate: "%s – Le-AI Docs" };
+  },
+  docsRepositoryBase: "https://github.com/LTopx/Le-AI",
+  nextThemes: {
+    defaultTheme: "dark",
+  },
+  logo,
+  navbar: {
+    extraContent: (
+      <div>
+        <Link href="https://github.com/LTopx/Le-AI" target="_blank">
+          <Button variant="ghost" size="icon" style={{ boxShadow: "none" }}>
+            <span className="i-mdi-github w-6 h-6" />
+          </Button>
+        </Link>
+        <Link href="https://twitter.com/peekbomb" target="_blank">
+          <Button variant="ghost" size="icon" style={{ boxShadow: "none" }}>
+            <span className="i-ri-twitter-x-fill w-[22px] h-[22px]" />
+          </Button>
+        </Link>
+        <Language />
+      </div>
+    ),
+  },
   banner: {
-    key: "0.9.2-release",
+    key: "1.0.0-Published",
     text: (
       <a href="https://le-ai.app" target="_blank">
-        🎉 Le-AI v0.9.2 released. Get to know →
+        🎉 Le-AI v1.0.0 Published. Get to know →
       </a>
     ),
   },
   search: {
     placeholder: () => {
       const router = useRouter();
-      if (router.locale === "zh-CN") return "搜索文档...";
+      if (router.locale === "zh") return "搜索文档...";
       return "Search documentation…";
     },
-  },
-  sidebar: {
-    defaultMenuCollapseLevel: 1,
   },
   editLink: {
     text: null,
@@ -77,26 +116,11 @@ const config: DocsThemeConfig = {
     content: null,
   },
   footer: {
-    text: (
-      <div className="flex flex-col w-full items-center sm:items-start">
-        <div>
-          <a
-            className="flex text-current gap-1 items-center"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="LTopx Le-AI"
-            href="https://github.com/LTopx"
-          >
-            Powered by LTopx
-          </a>
-        </div>
-        <p className="mt-6 text-xs">© {new Date().getFullYear()} Le-AI Docs.</p>
-      </div>
-    ),
+    component: <Footer />,
   },
   i18n: [
     { locale: "en", text: "English" },
-    { locale: "zh-CN", text: "中文" },
+    { locale: "zh", text: "中文" },
   ],
 };
 

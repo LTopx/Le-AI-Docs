@@ -1,6 +1,6 @@
-# Le-AI Docs
+# Nextra Docs Template 
 
-This is a template for creating documentation with [Le-AI](https://le-ai.app).
+This is a template for creating documentation with [Nextra](https://nextra.site).
 
 [**Live Demo →**](https://nextra-docs-template.vercel.app)
 

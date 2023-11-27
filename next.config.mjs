@@ -1,13 +1,12 @@
-import nextra from "nextra";
-
-const withNextra = nextra({
-  theme: "nextra-theme-docs",
-  themeConfig: "./theme.config.tsx",
-});
+import withNextra from "nextra";
 
 export default withNextra({
+  theme: "nextra-theme-docs",
+  themeConfig: "./theme.config.tsx",
+})({
+  // transpilePackages: ["geist"],
   i18n: {
-    locales: ["en", "zh-CN"],
-    defaultLocale: "zh-CN",
+    locales: ["en", "zh"],
+    defaultLocale: "en",
   },
 });

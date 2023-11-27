@@ -1,39 +1,37 @@
 {
-  "index": "Introduction",
-  "basic": "Basic",
-  "features": "Features",
-  "license": "License Type",
-  "client": "Client",
-  "faq": "FAQs",
-  "api-key-configure": "API Key Configure",
-  "token": "Token",
-  "develop": "Develop",
-  "privacy": "Privacy Policy",
-  "change-log": "Change Log",
-  "about": "About",
-  "try": {
+  "index": {
+    "title": "Home",
     "type": "page",
-    "title": "Try Le-AI ↗",
-    "href": "https://le-ai.app",
-    "newWindow": true
+    "theme": {
+      "layout": "raw"
+    },
+    "display": "hidden"
+  },
+  "client": {
+    "title": "Le-AI",
+    "type": "page"
+  },
+  "server": {
+    "title": "Le-AI-API",
+    "type": "page"
   },
   "contact": {
-    "type": "menu",
     "title": "Contact",
+    "type": "menu",
     "items": {
-      "about": {
-        "title": "X(Twitter) ↗",
+      "x": {
+        "title": "X",
         "href": "https://twitter.com/peekbomb",
         "newWindow": true
       },
-      "contact": {
-        "title": "Telegram ↗",
-        "href": "https://t.me/+7fLJJoGV_bJhYTk1",
+      "github": {
+        "title": "Github",
+        "href": "https://github.com/Peek-A-Booo",
         "newWindow": true
       },
       "blog": {
-        "title": "Blog ↗",
-        "href": "https://goethan.cc/",
+        "title": "Blog",
+        "href": "https://goethan.cc",
         "newWindow": true
       }
     }

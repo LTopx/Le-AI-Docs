@@ -1,0 +1,57 @@
+import Image from "next/image";
+import opengraph from "@public/opengraph-image.png";
+import { Cards, Card } from "nextra/components";
+
+# Le-AI
+
+<Image src={opengraph} alt="opengraph" className="rounded-lg" />
+
+## What is Le-AI
+
+Le-AI is an open-source third-party client based on the **OpenAI API**. It is developed using **Next.js** and packaged as a client with the help of **Tauri**.
+
+## Clients
+
+The support for the mobile app is still planning.
+
+- [x] Web
+- [x] macOS
+- [x] Windows
+- [x] Linux
+- [ ] iOS
+- [ ] Android
+
+## Quick Start
+
+<Cards>
+  <Card
+    icon={<span className="w-6 h-6 i-mdi-star-face" />}
+    title="Features"
+    href="/client/features"
+  />
+  <Card
+    icon={<span className="w-6 h-6 i-mingcute-book-2-fill" />}
+    title="Guild"
+    href="/client/guild"
+  />
+  <Card
+    icon={<span className="w-6 h-6 i-mdi-frequently-asked-questions" />}
+    title="FAQ"
+    href="/client/faq"
+  />
+  <Card
+    icon={<span className="w-6 h-6 i-mdi-code-not-equal-variant" />}
+    title="Develop"
+    href="/client/develop"
+  />
+  <Card
+    icon={<span className="w-6 h-6 i-mingcute-document-3-fill" />}
+    title="Change Log"
+    href="/client/changeLog"
+  />
+  <Card
+    icon={<span className="w-6 h-6 i-mdi-information" />}
+    title="About"
+    href="/client/about"
+  />
+</Cards>
