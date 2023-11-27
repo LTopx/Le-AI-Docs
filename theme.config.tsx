@@ -6,6 +6,7 @@ import { DocsThemeConfig, useConfig } from "nextra-theme-docs";
 import Language from "@/components/language";
 import Footer from "@/components/footer";
 import { Button } from "@/components/ui/button";
+import { env } from "@/env.mjs";
 
 const logo = (
   <div className="flex h-14 text-2xl gap-2 items-center logo">
@@ -55,11 +56,11 @@ const config: DocsThemeConfig = {
           content={title ? title + " – Le-AI Docs" : "Le-AI Docs"}
         />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
-        {!!process.env.UMAMI_WEBSITE_ID && (
+        {!!env.NEXT_PUBLIC_UMAMI_WEBSITE_ID && (
           <script
             async
             src="https://umami.ltopx.com/script.js"
-            data-website-id={process.env.UMAMI_WEBSITE_ID}
+            data-website-id={env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
           ></script>
         )}
       </>

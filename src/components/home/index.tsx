@@ -1,11 +1,13 @@
 import React from "react";
-import { useRouter } from "next/router";
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { getVariants, getSlideVariants } from "@/lib/variants";
 import useLocale from "@/hooks/useLocale";
+import { env } from "@/env.mjs";
 import Download from "./download";
 import Features from "./features";
 import ApiProxy from "./apiProxy";
@@ -81,16 +83,19 @@ export default function Home() {
           variants={getVariants({ delay: 0.6 })}
           className="flex justify-center gap-6 my-6 h-24 items-center"
         >
-          <Button
-            className={cn(
-              "rounded-full h-12 px-7 gap-2 text-base md:w-[220px]",
-              "bg-[rgb(23,23,23)] hover:bg-[rgb(56,56,56)]",
-              "dark:bg-[rgb(237,237,237)] dark:hover:bg-[rgb(204,204,204)] dark:text-[rgb(10,10,10)]"
-            )}
-          >
-            {tHome("getStarted")}
-            <span className="i-mdi-web w-5 h-5 lg:w-6 lg:h-6" />
-          </Button>
+          <Link href={env.NEXT_PUBLIC_WEB_LINK} target="_blank">
+            <Button
+              className={cn(
+                "rounded-full h-12 px-7 gap-2 text-base md:w-[220px]",
+                "bg-[rgb(23,23,23)] hover:bg-[rgb(56,56,56)]",
+                "dark:bg-[rgb(237,237,237)] dark:hover:bg-[rgb(204,204,204)] dark:text-[rgb(10,10,10)]"
+              )}
+            >
+              {tHome("getStarted")}
+              <span className="i-mdi-web w-5 h-5 lg:w-6 lg:h-6" />
+            </Button>
+          </Link>
+
           <Button
             className={cn(
               "rounded-full h-12 px-7 gap-2 text-base group hidden lg:flex border-none w-[220px]",

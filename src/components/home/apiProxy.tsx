@@ -1,11 +1,13 @@
 import React from "react";
-import { useRouter } from "next/router";
 import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { getVariants } from "@/lib/variants";
 import { Button } from "@/components/ui/button";
 import useLocale from "@/hooks/useLocale";
+import { env } from "@/env.mjs";
 
 export default function ApiProxy() {
   const router = useRouter();
@@ -92,22 +94,24 @@ export default function ApiProxy() {
                 {item.title}
               </div>
               <div className="mt-2.5">{item.content}</div>
-              <Button
-                className={cn(
-                  "rounded-full h-12 px-7 gap-2 text-base md:w-[220px] group/action mt-6 relative",
-                  "bg-actionBtn hover:bg-actionBtn border border-[rgba(0,0,0,.1)] text-black",
-                  "dark:bg-actionBtnDark dark:hover:bg-actionBtnDark dark:border-[rgba(255,255,255,.1)] dark:text-white"
-                )}
-                onMouseMove={handleMouseMove}
-              >
-                <motion.div
-                  className="pointer-events-none absolute inset-0 z-10 rounded-full opacity-0 transition-opacity duration-500 group-hover/action:opacity-100"
-                  style={{ background }}
-                  aria-hidden="true"
-                />
-                {tHome("tryNow")}
-                <span className="i-mingcute-arrow-right-circle-line w-5 h-5 lg:w-6 lg:h-6 transition-transform group-hover/action:-rotate-45" />
-              </Button>
+              <Link href={env.NEXT_PUBLIC_APIPROXY_LINK} target="_blank">
+                <Button
+                  className={cn(
+                    "rounded-full h-12 px-7 gap-2 text-base md:w-[220px] group/action mt-6 relative",
+                    "bg-actionBtn hover:bg-actionBtn border border-[rgba(0,0,0,.1)] text-black",
+                    "dark:bg-actionBtnDark dark:hover:bg-actionBtnDark dark:border-[rgba(255,255,255,.1)] dark:text-white"
+                  )}
+                  onMouseMove={handleMouseMove}
+                >
+                  <motion.div
+                    className="pointer-events-none absolute inset-0 z-10 rounded-full opacity-0 transition-opacity duration-500 group-hover/action:opacity-100"
+                    style={{ background }}
+                    aria-hidden="true"
+                  />
+                  {tHome("tryNow")}
+                  <span className="i-mingcute-arrow-right-circle-line w-5 h-5 lg:w-6 lg:h-6 transition-transform group-hover/action:-rotate-45" />
+                </Button>
+              </Link>
             </div>
             <Image
               className="w-full md:w-2/3 rounded-lg"
