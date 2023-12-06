@@ -1,1 +1,48 @@
-a
+import { Cards, Card } from "nextra/components";
+import Link from "next/link";
+import { env } from "@/env.mjs";
+
+# Le-AI API
+
+## 什么是 Le-AI API
+
+为了方便那些没有 OpenAI 账户或者由于网络原因以及其他原因不方便使用 OpenAI API 的用户，我们提供了 Le-AI API。这是一个基于 OpenAI API 的封装，可以直接使用，无需 OpenAI 账户。
+
+你除了能在 Le-AI 中使用之外，你还可以在其他类 ChatGPT 软件使用。例如：
+
+- ChatGPT Next Web
+- ChatBox
+- OpenCat
+- AMA
+
+访问链接：<Link href={env.NEXT_PUBLIC_APIPROXY_LINK} className="text-[#006be6] dark:text-[#008ae6] underline" target="_blank">{env.NEXT_PUBLIC_APIPROXY_LINK}</Link>
+
+## 快速开始
+
+<Cards>
+  <Card
+    icon={<span className="w-6 h-6 i-mdi-star-face" />}
+    title="功能特性"
+    href="/client/features"
+  />
+  <Card
+    icon={<span className="w-6 h-6 i-mingcute-book-2-fill" />}
+    title="如何使用"
+    href="/client/guild"
+  />
+  <Card
+    icon={<span className="w-6 h-6 i-mdi-frequently-asked-questions" />}
+    title="如何购买"
+    href="/client/faq"
+  />
+  <Card
+    icon={<span className="w-6 h-6 i-mdi-code-not-equal-variant" />}
+    title="常见问题"
+    href="/client/develop"
+  />
+  <Card
+    icon={<span className="w-6 h-6 i-mingcute-document-3-fill" />}
+    title="更新日志"
+    href="/client/changeLog"
+  />
+</Cards>

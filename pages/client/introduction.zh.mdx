@@ -1,6 +1,8 @@
 import Image from "next/image";
-import opengraph from "@public/opengraph-image.png";
+import Link from "next/link";
 import { Cards, Card } from "nextra/components";
+import opengraph from "@public/opengraph-image.png";
+import { env } from "@/env.mjs";
 
 # Le-AI
 
@@ -9,6 +11,8 @@ import { Cards, Card } from "nextra/components";
 ## 什么是 Le-AI
 
 Le-AI 是一个开源的，基于 **OpenAI API** 的第三方客户端。使用 **Next.js** 开发，借助 **Tauri** 打包为客户端。
+
+访问链接：<Link href={env.NEXT_PUBLIC_WEB_LINK} className="text-[#006be6] dark:text-[#008ae6] underline" target="_blank">{env.NEXT_PUBLIC_WEB_LINK}</Link>
 
 ## 支持的客户端
 
@@ -31,7 +35,7 @@ Le-AI 是一个开源的，基于 **OpenAI API** 的第三方客户端。使用 
   />
   <Card
     icon={<span className="w-6 h-6 i-mingcute-book-2-fill" />}
-    title="使用指南"
+    title="如何使用"
     href="/client/guild"
   />
   <Card
@@ -51,7 +55,7 @@ Le-AI 是一个开源的，基于 **OpenAI API** 的第三方客户端。使用 
   />
   <Card
     icon={<span className="w-6 h-6 i-mdi-information" />}
-    title="关于"
-    href="/client/about"
+    title="隐私政策"
+    href="/client/privacy"
   />
 </Cards>

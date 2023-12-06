@@ -1,6 +1,8 @@
 import Image from "next/image";
-import opengraph from "@public/opengraph-image.png";
+import Link from "next/link";
 import { Cards, Card } from "nextra/components";
+import opengraph from "@public/opengraph-image.png";
+import { env } from "@/env.mjs";
 
 # Le-AI
 
@@ -9,6 +11,8 @@ import { Cards, Card } from "nextra/components";
 ## What is Le-AI
 
 Le-AI is an open-source third-party client based on the **OpenAI API**. It is developed using **Next.js** and packaged as a client with the help of **Tauri**.
+
+Link: <Link href={env.NEXT_PUBLIC_WEB_LINK} className="text-[#006be6] dark:text-[#008ae6] underline" target="_blank">{env.NEXT_PUBLIC_WEB_LINK}</Link>
 
 ## Clients
 
@@ -51,7 +55,7 @@ The support for the mobile app is still planning.
   />
   <Card
     icon={<span className="w-6 h-6 i-mdi-information" />}
-    title="About"
-    href="/client/about"
+    title="Privacy Policy"
+    href="/client/privacy"
   />
 </Cards>
