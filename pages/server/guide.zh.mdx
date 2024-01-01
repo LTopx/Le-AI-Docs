@@ -1,0 +1,61 @@
+import Link from "next/link";
+import Image from "@/components/image";
+import { env } from "@/env.mjs";
+
+# 如何使用
+
+## 使用前准备
+
+- 访问 <Link href={env.NEXT_PUBLIC_APIPROXY_LINK} target="_blank" className="text-[#006be6] dark:text-[#008ae6] underline font-bold">Le-AI API</Link> 注册账号
+
+## 基本使用
+
+1. 账号注册成功之后，在下方 **“密钥管理”** 处新建密钥。
+
+   <Image
+     className="mb-4"
+     src="/server/create-key.zh.png"
+     alt="create-key"
+     width={1032}
+     height={604}
+   />
+
+2. 密钥新建成功，在 **“密钥管理”** 列表中即可点击**复制**密钥。
+
+   <Image
+     className="mb-4"
+     src="/server/copy-key.zh.png"
+     alt="copy-key"
+     width={2732}
+     height={504}
+   />
+
+3. 使用时将对应系统中所有的 https://api.openai.com 替换为 Le-AI API 提供的中转接口地址即可，接口用法与 OpenAI 官方 API 完全一致。
+
+   <Image src="/server/proxy.zh.png" alt="proxy" width={2732} height={490} />
+
+## 在 Le-AI 中使用
+
+- 自动配置
+
+  为了更方便的在 Le-AI 中使用，在 **“密钥管理”** 列表中新增了一件配置功能。
+
+  <Image
+    src="/server/direct-use.zh.png"
+    alt="direct-use"
+    width={2732}
+    height={504}
+  />
+
+  点击「**在 Le-AI 中使用**」即可跳转到 Le-AI 应用自动配置相关代理和 key。
+
+  <Image
+    src="/server/direct-use.zh.png"
+    alt="direct-use"
+    width={2732}
+    height={504}
+  />
+
+- 手动配置
+
+  啊舒服撒

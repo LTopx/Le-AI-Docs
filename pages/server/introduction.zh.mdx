@@ -1,5 +1,6 @@
 import { Cards, Card } from "nextra/components";
 import Link from "next/link";
+import Image from "@/components/image";
 import { env } from "@/env.mjs";
 
 # Le-AI API
@@ -17,18 +18,37 @@ import { env } from "@/env.mjs";
 
 访问链接：<Link href={env.NEXT_PUBLIC_APIPROXY_LINK} className="text-[#006be6] dark:text-[#008ae6] underline" target="_blank">{env.NEXT_PUBLIC_APIPROXY_LINK}</Link>
 
+## 功能特性
+
+### 支持 Chat/Images/Audio API
+
+目前支持 OpenAI API 的三个接口，分别是 **[/chat](https://platform.openai.com/docs/api-reference/chat)**, **[/images](https://platform.openai.com/docs/api-reference/images)**, **[/audio](https://platform.openai.com/docs/api-reference/audio)**。
+
+API 调用方式与官方完全一致。
+
+### 快速查看 API 消耗
+
+Le-AI API 会记录每次调用时消耗 tokens 的情况，并且将其展示在首页中方便查看。包括月度消耗以及每次调用时的消耗记录。
+
+<Image
+  className="w-[1034px]"
+  src="/server/usage.png"
+  alt="usage"
+  width={2728}
+  height={1328}
+/>
+
+### 按量付费
+
+用多少买多少，不用担心浪费。并且 **永久有效**，不会过期。
+
 ## 快速开始
 
 <Cards>
   <Card
-    icon={<span className="w-6 h-6 i-mdi-star-face" />}
-    title="功能特性"
-    href="/client/features"
-  />
-  <Card
     icon={<span className="w-6 h-6 i-mingcute-book-2-fill" />}
     title="如何使用"
-    href="/client/guild"
+    href="/server/guide"
   />
   <Card
     icon={<span className="w-6 h-6 i-mdi-frequently-asked-questions" />}
