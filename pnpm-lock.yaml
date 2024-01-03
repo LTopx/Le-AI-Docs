@@ -27,11 +27,11 @@ dependencies:
     specifier: 0.7.0
     version: 0.7.0
   clsx:
-    specifier: 2.0.0
-    version: 2.0.0
+    specifier: 2.1.0
+    version: 2.1.0
   framer-motion:
-    specifier: 10.16.16
-    version: 10.16.16(react-dom@18.2.0)(react@18.2.0)
+    specifier: 10.17.3
+    version: 10.17.3(react-dom@18.2.0)(react@18.2.0)
   lucide-react:
     specifier: 0.303.0
     version: 0.303.0(react@18.2.0)
@@ -62,11 +62,11 @@ dependencies:
 
 devDependencies:
   '@iconify-json/mdi':
-    specifier: 1.1.63
-    version: 1.1.63
+    specifier: 1.1.64
+    version: 1.1.64
   '@iconify-json/mingcute':
-    specifier: 1.1.14
-    version: 1.1.14
+    specifier: 1.1.15
+    version: 1.1.15
   '@iconify-json/ri':
     specifier: 1.1.18
     version: 1.1.18
@@ -74,8 +74,8 @@ devDependencies:
     specifier: 1.1.86
     version: 1.1.86
   '@types/node':
-    specifier: 20.10.5
-    version: 20.10.5
+    specifier: 20.10.6
+    version: 20.10.6
   '@types/react':
     specifier: 18.2.46
     version: 18.2.46
@@ -192,14 +192,14 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /@iconify-json/mdi@1.1.63:
-    resolution: {integrity: sha512-b07dRM5LYdwJqd/lm+1+JDNDNSWHvpZ7ujb73oJxx3lmK1J0giDS0BSc4yia0hixNV0Z2q/4GyxAu/A8XqDnbg==}
+  /@iconify-json/mdi@1.1.64:
+    resolution: {integrity: sha512-zGeo5TjhNFAY6FmSDBLAzDO811t77r6v/mDi7CAL9w5eXqKez6bIjk8R9AL/RHIeq44ALP4Ozr4lMqFTkHr7ug==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
 
-  /@iconify-json/mingcute@1.1.14:
-    resolution: {integrity: sha512-oWeGJzNBHPLFLdjqYFg80GL12F7vp+qCpSqt34G9CzP/20eduYLZyB1gB8GW2beTl335lssJo28QT/ObyJ3YpQ==}
+  /@iconify-json/mingcute@1.1.15:
+    resolution: {integrity: sha512-QipLTzA5xE8gJiq9ajlqVuQufFzoMy18vKIqimJRV39+X1qqKbj8vDEbnIJPlfMpLlmBqmHtIdpiRSf4+S/wLA==}
     dependencies:
       '@iconify/types': 2.0.0
     dev: true
@@ -1203,8 +1203,8 @@ packages:
     resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
     dev: false
 
-  /@types/node@20.10.5:
-    resolution: {integrity: sha512-nNPsNE65wjMxEKI93yOP+NPGGBJz/PoN3kZsVLee0XMiJolxSekEVD8wRwBUBqkwc7UWop0edW50yrCQW4CyRw==}
+  /@types/node@20.10.6:
+    resolution: {integrity: sha512-Vac8H+NlRNNlAmDfGUP7b5h/KA+AtWIzuXy0E6OyP8f1tCLYAtPvKRRDJjAPqhpCb0t6U2j7/xqAuLEebW2kiw==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -1451,6 +1451,11 @@ packages:
 
   /clsx@2.0.0:
     resolution: {integrity: sha512-rQ1+kcj+ttHG0MKVGBUXwayCCF1oh39BF5COIpRzuCEv8Mwjv0XucrI2ExNTOn9IlLifGClWQcU9BrZORvtw6Q==}
+    engines: {node: '>=6'}
+    dev: false
+
+  /clsx@2.1.0:
+    resolution: {integrity: sha512-m3iNNWpd9rl3jvvcBnu70ylMdrXt8Vlq4HYadnU5fwcOtvkSQWPmj7amUcDT2qYI7risszBjI5AUIUox9D16pg==}
     engines: {node: '>=6'}
     dev: false
 
@@ -2069,8 +2074,8 @@ packages:
     resolution: {integrity: sha512-ZsDfxO51wGAXREY55a7la9LScWpwv9RxIrYABrlvOFBlH/ShPnrtsXeuUIfXKKOVicNxQ+o8JTbJvjS4M89yew==}
     dev: true
 
-  /framer-motion@10.16.16(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-je6j91rd7NmUX7L1XHouwJ4v3R+SO4umso2LUcgOct3rHZ0PajZ80ETYZTajzEXEl9DlKyzjyt4AvGQ+lrebOw==}
+  /framer-motion@10.17.3(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-xgsIu+71zgpwBOPSyFI6ZL6L2Z2WK0gpd83FyBcoILEGty1Ka45+mpv5j6ZupgSMNv0OYBOf3sqtRjvy11K6Ew==}
     peerDependencies:
       react: ^18.0.0
       react-dom: ^18.0.0
@@ -3357,7 +3362,7 @@ packages:
     dependencies:
       '@headlessui/react': 1.7.17(react-dom@18.2.0)(react@18.2.0)
       '@popperjs/core': 2.11.8
-      clsx: 2.0.0
+      clsx: 2.1.0
       escape-string-regexp: 5.0.0
       flexsearch: 0.7.31
       focus-visible: 5.2.0
@@ -3388,7 +3393,7 @@ packages:
       '@napi-rs/simple-git': 0.1.9
       '@theguild/remark-mermaid': 0.0.5(react@18.2.0)
       '@theguild/remark-npm2yarn': 0.2.1
-      clsx: 2.0.0
+      clsx: 2.1.0
       github-slugger: 2.0.0
       graceful-fs: 4.2.11
       gray-matter: 4.0.3
